@@ -19,6 +19,7 @@ deriv_f2 = lambda x : -((sin(31.416*x))/2*pow(x,1))+((15.708*cos(31.416*x))/(x))
 
 errorMargin=0.001
 
+# l_r is the learning rate
 def gradientDesc(functionName, function, deriv, low, up, x_new, x_prev, precision, l_r):
     x = linspace(low,up,150) 
     x_list, y_list = [x_new], [function(x_new)]
